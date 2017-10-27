@@ -1,0 +1,45 @@
+@import 'reset';
+@import 'utils';
+
+@import url(http://fonts.googleapis.com/css?family=Satisfy|Pathway+Gothic+One);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+$moodyBlue: #18293A;
+$bruisedBlue: #253A4D;
+$kindBlue: #4196E9;
+
+$white: #fff;
+$faded-white: rgba(255,255,255,0.8);
+$faded-one: rgba(0,0,0,0.1);
+$faded-two: rgba(0,0,0,0.2);
+
+$pathWay: 'Pathway Gothic One', 'sans-serif';
+$satisfy: 'Satisfy', 'cursive';
+$roboto: 'Roboto';
+
+$dimension: 60px;
+
+@import 'defaults';
+
+body {
+  background: $bruisedBlue;
+}
+
+.container {
+	@extend .flex-column;
+	min-height: 100vh;
+	nav {
+		// more in components/nav-bar.scss
+    	position: fixed;
+    	width: 100%;
+	}
+	section {
+    @extend .flex-column;
+		flex: 1;
+    	margin-top: 100px;
+	}
+}
+
+@import 'shared/menu-list';
+
+@import 'components/nav-bar';

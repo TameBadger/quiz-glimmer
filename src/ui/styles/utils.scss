@@ -1,0 +1,28 @@
+.flex-center-all {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.middle-self{
+	display: flex;
+	align-self: center;
+}
+
+.flex-wrap{
+	flex-wrap: wrap;
+}
+
+.below-1{
+	z-index: -1;
+}
